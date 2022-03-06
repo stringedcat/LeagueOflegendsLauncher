@@ -1,0 +1,267 @@
+body {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.container {
+  height: 850px;
+  width: 1530px;
+  margin-top: 30px;
+  display: flex;
+  position: relative;
+}
+
+.left {
+  color: black;
+  flex: 2;
+  background-color: #f7f9fc;
+}
+.getInto {
+  margin-top: 90px;
+  letter-spacing: -1px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.logo {
+  margin-top: 30px;
+}
+.formLogin {
+  margin-left: 10px;
+}
+.inputLog {
+  border: none;
+  background-color: #ecf0f1;
+  height: 45px;
+  width: 290px;
+  margin-bottom: 15px;
+  box-shadow: none;
+  padding: 25px 10px;
+  font-weight: 600;
+  font-size: 17px;
+  box-sizing: border-box;
+}
+.left .wrapper form div {
+  position: relative;
+}
+
+.left .wrapper form div label {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  font-size: 11.5px;
+  font-weight: bold;
+  color: #a1a1a1;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.left .wrapper input:focus ~ label,
+.left .wrapper input:valid ~ label {
+  top: 2px;
+  left: 9px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.checkSection {
+  margin-top: 10px;
+  margin-right: 90px;
+  position: relative;
+}
+.check {
+  -webkit-appearance: none;
+  background-color: #ecf0f1;
+  padding: 9px;
+  border-radius: 5px;
+  left: -30px;
+  position: absolute;
+}
+.check:checked {
+  background-color: #c70039;
+}
+.check:checked:after {
+  content: "\2714";
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: white;
+}
+.spanCheck {
+  font-weight: 1000;
+  font-size: 13px;
+  left: -60px;
+}
+.loginButton {
+  margin-top: 200px;
+  height: 60px;
+  width: 60px;
+  border-radius: 15px;
+  border: 2px solid #e1e1e1;
+  background-color: #f7f9fc;
+}
+.lineArrow {
+  margin-left: 7px;
+  margin-top: 13px;
+  width: 25px;
+  height: 15px;
+  box-shadow: 2px 0 #e1e1e1;
+  transform: rotate(-90deg);
+  position: absolute;
+}
+.arrowButton {
+  margin-left: 10px;
+  width: 14px;
+  height: 14px;
+  box-shadow: -2px 2px 0 #e1e1e1;
+  transform: rotate(-135deg);
+}
+.footer {
+  top: 770px;
+  position: absolute;
+}
+.text1,
+.text2 {
+  font-weight: 700;
+  color: #b1b1b1;
+  font-size: 11px;
+  line-height: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.text1:hover,
+.text2:hover {
+  color: black;
+}
+.version {
+  position: absolute;
+  bottom: 1px;
+  left: 200px;
+  font-weight: 700;
+  color: #b1b1b1;
+  font-size: 11px;
+  cursor: pointer;
+}
+.version:hover {
+  color: #7e7e7e;
+}
+.threeLogin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  margin-left: 5px;
+}
+.facebook {
+  background-color: #0a7cfc;
+  height: 25px;
+  width: 87px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.facebook:hover {
+  filter: brightness(70%);
+}
+.google {
+  background-color: white;
+  height: px;
+  width: 87px;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 10px;
+  border: 1px solid #ecf0f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.google:hover {
+  filter: brightness(95%);
+}
+.apple {
+  cursor: pointer;
+  background-color: black;
+  height: 25px;
+  width: 87px;
+  margin-left: 10px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.right {
+  flex: 5.7;
+  background-image: url("/renata-glasc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  fill: auto;
+}
+
+.wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 50px;
+}
+.cross {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cross:hover {
+  background-color: #e7480c;
+}
+.cross:before,
+.cross:after {
+  position: absolute;
+  content: " ";
+  height: 15px;
+  width: 0.5px;
+  background-color: white;
+}
+.cross:before {
+  transform: rotate(45deg);
+}
+.cross:after {
+  transform: rotate(-45deg);
+}
+.line {
+  position: absolute;
+  top: 1px;
+  right: 30px;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  opacity: 0.5;
+  align-items: center;
+  justify-content: center;
+}
+.line:hover {
+  opacity: 1;
+}
+.line:before {
+  position: absolute;
+  top: 10px;
+  content: " ";
+  height: 10px;
+  width: 0.5px;
+  background-color: white;
+}
+.line:before {
+  transform: rotate(90deg);
+}
