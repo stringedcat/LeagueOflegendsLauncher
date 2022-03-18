@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="./index.js"></script>
   </head>
   <body>
     <div class="container">
@@ -20,35 +21,36 @@
           <img class="logo" src="riot-games-logo.png" alt="" width="90px" />
 
           <h2 class="getInto">Ingresar</h2>
-          <form class="formLogin">
+          <form id="form" class="formLogin">
             <div>
-              <input class="inputLog" type="text" required />
-              <label>NOMBRE DE USUARIO</label>
+              <input id="name" class="inputLog" type="text" required />
+              <label for="name">NOMBRE DE USUARIO</label>
             </div>
             <div>
-              <input class="inputLog" type="password" required />
-              <label>CONTRASEÑA</label>
+              <input id="password" class="inputLog" type="password" required />
+              <label for="password">CONTRASEÑA</label>
             </div>
+            <div class="threeLogin">
+              <div class="facebook" tabindex="0">
+                <img src="logo_facebook.png" width="25px" alt="" />
+              </div>
+              <div class="google" tabindex="0">
+                <img src="logo_google.png" width="15px" alt="" />
+              </div>
+              <div class="apple" tabindex="0">
+                <img src="logo_apple.png" width="15px" alt="" />
+              </div>
+            </div>
+            <label class="checkSection">
+              <input type="checkbox" class="check" />
+              <span class="spanCheck">Permanecer conectado</span>
+            </label>
+            <button id="submitButton" class="loginButton" type="submit">
+              <div class="lineArrow"></div>
+              <div class="arrowButton"></div>
+            </button>
           </form>
-          <div class="threeLogin">
-            <div class="facebook" tabindex="0">
-              <img src="logo_facebook.png" width="25px" alt="" />
-            </div>
-            <div class="google" tabindex="0">
-              <img src="logo_google.png" width="15px" alt="" />
-            </div>
-            <div class="apple" tabindex="0">
-              <img src="logo_apple.png" width="15px" alt="" />
-            </div>
-          </div>
-          <label class="checkSection">
-            <input type="checkbox" class="check" />
-            <span class="spanCheck">Permanecer conectado</span>
-          </label>
-          <button class="loginButton">
-            <div class="lineArrow"></div>
-            <div class="arrowButton"></div>
-          </button>
+
           <div class="footer">
             <p class="text1" tabindex="0">¿NO PUEDES INICIAR SESION?</p>
             <p class="text2" tabindex="0">CREAR UNA CUENTA</p>
@@ -63,6 +65,5 @@
         </div>
       </div>
     </div>
-    <script src="./index.js"></script>
   </body>
 </html>

@@ -29,6 +29,10 @@ body {
 }
 .formLogin {
   margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .inputLog {
   border: none;
@@ -94,31 +98,34 @@ body {
   left: -60px;
 }
 .loginButton {
-  margin-top: 200px;
-  height: 60px;
-  width: 60px;
-  border-radius: 15px;
+  margin-top: 300px;
+  height: 70px;
+  width: 70px;
+  border-radius: 25px;
   border: 2px solid #e1e1e1;
   background-color: #f7f9fc;
+  position: relative;
 }
 .lineArrow {
-  margin-left: 7px;
-  margin-top: 13px;
-  width: 25px;
+  top: 18px;
+  left: 16px;
+  width: 15px;
   height: 15px;
   box-shadow: 2px 0 #e1e1e1;
   transform: rotate(-90deg);
   position: absolute;
 }
 .arrowButton {
-  margin-left: 10px;
   width: 14px;
   height: 14px;
+  top: -5px;
+  left: 15px;
   box-shadow: -2px 2px 0 #e1e1e1;
   transform: rotate(-135deg);
+  position: absolute;
 }
 .footer {
-  top: 770px;
+  top: 800px;
   position: absolute;
 }
 .text1,
@@ -201,6 +208,8 @@ body {
   background-size: cover;
   background-position: 100%;
   position: relative;
+  max-width: 100%;
+  height: auto;
   fill: auto;
 }
 
@@ -287,6 +296,31 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+
+  .loginButton {
+    margin-top: 40px;
+  }
+  .footer {
+    top: 550px;
+    position: absolute;
+  }
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+  .loginButton {
+    margin-top: 50px;
+  }
+  .footer {
+    top: 550px;
+    position: absolute;
+  }
+}
+
+
 @media screen and (max-width: 1024px) {
   .right {
     flex:3;
@@ -299,10 +333,11 @@ body {
     margin-top: 15px;
   }
   .footer {
-    top: 550px;
+    top: 300px;
     position: absolute;
   }
 }
+
 
 @media screen and (max-width: 1280px) {
 
